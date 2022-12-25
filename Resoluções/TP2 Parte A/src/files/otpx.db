@@ -1,0 +1,35 @@
+# otpx top domain database
+
+TTL DEFAULT 86400
+@ DEFAULT otpx.
+DAY DEFAULT 86400
+
+@ SOASP servp.otpx. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 100 TTL
+@ SOARETRY 10 TTL
+@ SOAEXPIRE 10 TTL
+
+# My domain
+@ NS servs.otpx. TTL 1
+@ NS servp.otpx. TTL 2
+
+# My subdomains
+dcba NS ossa.dcba.otpx. TTL 1
+dcba NS ossb.dcba.otpx. TTL 2
+dcba NS osp.dcba.otpx. TTL 3
+
+# server ip's
+servs A 10.0.3.11 TTL
+servp A 10.0.2.11 TTL
+
+osp.dcba A 10.0.8.11 TTL
+ossa.dcba A 10.0.9.11 TTL
+ossb.dcba A 10.0.10.11 TTL
+
+# Canonics
+sp CNAME servp TTL
+ss CNAME servs TTL
+sp.dcba CNAME osp.dcba TTL
+ssa.dcba CNAME ossa.dcba TTL
+ssb.dcba CNAME ossb.dcba TTL

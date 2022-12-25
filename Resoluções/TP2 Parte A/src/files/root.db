@@ -1,0 +1,34 @@
+# root database
+
+TTL DEFAULT 86400
+DAY DEFAULT 86400
+@ DEFAULT .
+
+. SOASP servp. TTL
+. SOASERIAL 1 TTL
+. SOAREFRESH 100 TTL
+. SOARETRY 10 TTL
+. SOAEXPIRE 1000 TTL
+
+# My domain
+. NS servs. TTL 1
+. NS servp. TTL 2
+
+# My subdomains
+xpto. NS xss.xpto. TTL 1
+xpto. NS xsp.xpto. TTL 2
+otpx. NS oss.otpx. TTL 1
+otpx. NS osp.otpx. TTL 2
+
+# SERVER IP's
+servs. A 10.0.1.10 DAY
+servp. A 10.0.0.10 DAY
+
+xsp.xpto. A 10.0.2.10 DAY
+xss.xpto. A 10.0.3.10 DAY
+osp.otpx. A 10.0.2.11 DAY
+oss.otpx. A 10.0.3.11 DAY
+
+# Canonic names
+sp CNAME servp DAY
+ss CNAME servs DAY

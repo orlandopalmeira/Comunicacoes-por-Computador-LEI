@@ -1,0 +1,36 @@
+# dcba.otpx. subdomain database
+
+TTL DEFAULT 86400
+@ DEFAULT dcba.otpx.
+DAY DEFAULT 86400
+
+@ SOASP servp.abcd.xpto. TTL
+@ SOAADMIN dcba\.admin.dcba.otpx. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 100 TTL
+@ SOARETRY 10 TTL
+@ SOAEXPIRE 100 TTL
+
+# My domain
+@ NS servsa.dcba.otpx. TTL 1
+@ NS servsb.dcba.otpx. TTL 2
+@ NS servp.dcba.otpx. TTL 3
+
+# servers ip's
+servp A 10.0.8.11 TTL
+servsa A 10.0.9.11 TTL
+servsb A 10.0.10.11 TTL
+mail1 A 200.0.2.1 TTL
+mail2 A 200.0.2.2 TTL
+mail3 A 200.0.2.3 TTL
+www A 200.0.2.4 TTL
+
+# Canonics
+sp CNAME servp TTL
+ssa CNAME servsa TTL
+ssb CNAME servsb TTL
+
+# EMAILS
+@ MX mail1.abcd.xpto. TTL
+@ MX mail2.abcd.xpto. TTL
+@ MX mail3.abcd.xpto. TTL

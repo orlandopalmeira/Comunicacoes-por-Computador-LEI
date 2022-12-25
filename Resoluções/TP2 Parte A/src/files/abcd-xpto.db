@@ -1,0 +1,36 @@
+# abcd.xpto. subdomain database
+
+TTL DEFAULT 86400
+@ DEFAULT abcd.xpto.
+DAY DEFAULT 86400
+
+@ SOASP servp.abcd.xpto. TTL
+@ SOAADMIN abcd\.admin.abcd.xpto. TTL
+@ SOASERIAL 2 TTL
+@ SOAREFRESH 100 TTL
+@ SOARETRY 10 TTL
+@ SOAEXPIRE 80 TTL
+
+# My domain
+@ NS servsa.abcd.xpto. TTL 1
+@ NS servsb.abcd.xpto. TTL 2
+@ NS servp.abcd.xpto. TTL 3
+
+# servers ip's
+servp A 10.0.8.10 TTL
+servsa A 10.0.9.10 TTL
+servsb A 10.0.10.10 TTL
+mail1 A 200.0.1.1 TTL
+mail2 A 200.0.1.2 TTL
+mail3 A 200.0.1.3 TTL
+www A 200.0.1.4 TTL
+
+# Canonics
+sp CNAME servp TTL
+ssa CNAME servsa TTL
+ssb CNAME servsb TTL
+
+# EMAILS
+@ MX mail1.abcd.xpto. TTL
+@ MX mail2.abcd.xpto. TTL
+@ MX mail3.abcd.xpto. TTL

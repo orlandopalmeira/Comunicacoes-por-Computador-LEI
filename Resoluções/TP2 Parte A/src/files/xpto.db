@@ -1,0 +1,35 @@
+# xpto top domain database
+
+TTL DEFAULT 86400
+@ DEFAULT xpto.
+DAY DEFAULT 86400
+
+@ SOASP servp.xpto. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 100 TTL
+@ SOARETRY 10 TTL
+@ SOAEXPIRE 10 TTL
+
+# My domain
+@ NS servs.xpto. TTL 1
+@ NS servp.xpto. TTL 2
+
+# My subdomains
+abcd NS xssa.abcd.xpto. TTL 1
+abcd NS xssb.abcd.xpto. TTL 2
+abcd NS xsp.abcd.xpto. TTL 3
+
+# servers ip's
+servs A 10.0.3.10 TTL
+servp A 10.0.2.10 TTL
+
+xsp.abcd A 10.0.8.10 TTL
+xssa.abcd A 10.0.9.10 TTL
+xssb.abcd A 10.0.10.10 TTL
+
+# Canonics
+sp CNAME servp TTL
+ss CNAME servs TTL
+sp.abcd CNAME xsp.abcd TTL
+ssa.abcd CNAME xssa.abcd TTL
+ssb.abcd CNAME xssb.abcd TTL

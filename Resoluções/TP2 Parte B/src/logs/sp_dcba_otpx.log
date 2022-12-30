@@ -1,0 +1,4 @@
+29/12/2022 18:26:02 EV 127.0.0.1 conf-file-read './files/sp_dcba_otpx.conf'
+29/12/2022 18:26:02 EV 127.0.0.1 db-file './files/dcba-otpx.db' was read'
+29/12/2022 18:26:41 ZT 10.0.9.11 SP
+29/12/2022 18:27:24 ZT 10.0.10.11 SP

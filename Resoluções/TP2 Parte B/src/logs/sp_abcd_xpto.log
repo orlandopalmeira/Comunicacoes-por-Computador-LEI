@@ -1,0 +1,4 @@
+29/12/2022 18:23:39 EV 127.0.0.1 conf-file-read './files/sp_abcd_xpto.conf'
+29/12/2022 18:23:39 EV 127.0.0.1 db-file './files/abcd-xpto.db' was read'
+29/12/2022 18:24:41 ZT 10.0.9.10 SP
+29/12/2022 18:25:30 ZT 10.0.10.10 SP

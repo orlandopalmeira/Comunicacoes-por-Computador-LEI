@@ -1,0 +1,4 @@
+29/12/2022 18:30:13 EV 127.0.0.1 conf-file-read './files/sp_in_addr_reverse.conf'
+29/12/2022 18:30:14 EV 127.0.0.1 db-file './files/in_addr-reverse.db' was read'
+29/12/2022 18:32:50 QR 10.0.8.12:53262 7495,Q,0,0,0,0;10.8.0.10.in-addr.reverse.,PTR;
+29/12/2022 18:32:50 RP 10.0.8.12:53262 7495,A,2,0,2,2;10.8.0.10.in-addr.reverse.,PTR;in-addr.reverse. NS iasp.in-addr.reverse. 86400,10.in-addr.reverse. NS 10sp.10.in-addr.reverse. 86400;iasp.in-addr.reverse. A 10.0.11.11 86400,10sp.10.in-addr.reverse. A 10.0.11.12 86400;

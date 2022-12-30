@@ -1,0 +1,38 @@
+# database file for 10.in-addr.reverse. domain
+
+# Defaults
+TTL DEFAULT 86400
+@ DEFAULT 10.in-addr.reverse.
+
+# SOA's
+@ SOASP 10sp.10.in-addr.reverse. TTL
+@ SOAADMIN dns\.admin.10.in-addr.reverse. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 86400 TTL
+@ SOARETRY 10 TTL
+@ SOAEXPIRE 86400 TTL
+
+# My domain
+@ NS 10sp.10.in-addr.reverse. TTL
+10sp A 10.0.11.12 TTL
+
+# PTR Entries
+10.0.0 PTR rsp. TTL
+10.1.0 PTR rss. TTL
+
+10.2.0 PTR xsp.xpto. TTL
+10.3.0 PTR xss.xpto. TTL
+
+11.2.0 PTR osp.otpx. TTL
+11.3.0 PTR oss.otpx. TTL
+
+10.8.0 PTR axsp.abcd.xpto. TTL
+10.9.0 PTR axssa.abcd.xpto. TTL
+10.10.0 PTR axssb.abcd.xpto. TTL
+
+11.8.0 PTR dosp.dcba.otpx. TTL
+11.9.0 PTR dossa.dcba.otpx. TTL
+11.10.0 PTR dossb.dcba.otpx. TTL
+
+# CNAME's
+sp CNAME 10sp TTL

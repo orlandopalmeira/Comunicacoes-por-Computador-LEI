@@ -1,0 +1,27 @@
+# Database file for domain reverse.
+
+# Defaults
+TTL DEFAULT 86400
+@ DEFAULT reverse.
+
+# SOA's
+@ SOASP revsp.reverse. TTL
+@ SOAADMIN dns\.admin.reverse. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 86400 TTL
+@ SOARETRY 10 TTL
+@ SOAEXPIRE 86400 TTL
+
+# My domain
+@ NS revsp.reverse. TTL
+
+# My subdomain  
+in-addr NS iasp.in-addr.reverse. TTL
+
+# Servers IP's
+revsp A 10.0.11.10 TTL
+iasp.in-addr A 10.0.11.11 TTL
+
+# CNAME's
+sp CNAME revsp TTL
+spia CNAME iasp TTL

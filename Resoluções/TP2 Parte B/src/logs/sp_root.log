@@ -1,0 +1,5 @@
+29/12/2022 18:22:19 EV 127.0.0.1 conf-file-read './files/stp.conf'
+29/12/2022 18:22:19 EV 127.0.0.1 db-file './files/root.db' was read'
+29/12/2022 18:22:22 ZT 10.0.1.10 SP
+29/12/2022 18:32:10 QR 10.0.8.12:33416 17435,Q,0,0,0,0;dcba.otpx.,MX;
+29/12/2022 18:32:10 RP 10.0.8.12:33416 17435,A,2,0,4,4;dcba.otpx.,MX;. NS rss. 86400 1,. NS rsp. 86400 2,otpx. NS oss.otpx. 86400 1,otpx. NS osp.otpx. 86400 2;rss. A 10.0.1.10 86400,rsp. A 10.0.0.10 86400,osp.otpx. A 10.0.2.11 86400,oss.otpx. A 10.0.3.11 86400;

@@ -6,4 +6,4 @@ Esta pasta contém os seguintes ficheiros relativos à parte B do TP2:
 - Topologia do core: [Topologia](./src/topologiatp2_1.imn)
 - Ficheiros de base de dados e configuração: [aqui](./src/files/)
 
-## Nota obtida no TP2 (Parte B): __._ valores
+## Nota obtida no TP2 (Parte B): 20.0 valores
